@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Photographer portfolio
+title: Remington Scott Masters Upstate NY Photography
 ---
 {% include hero-area.html %}
 {% include about-section.html %}
