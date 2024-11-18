@@ -5,56 +5,17 @@
         Portfolio
       </h2>
     </div>
-    
-    <div class="portfolio_container ">
-      <div class="box-1">
-        <div class="img-box b-1">
-          <img src="{{ site.baseurl }}/assets/images/p1.jpg" alt="">
-          <div class="btn-box">
-            <a href="" class="btn-1">
-              <i class="fa fa-share-alt" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="img-box b-2">
-          <img src="{{ site.baseurl }}/assets/images/p2.jpg" alt="">
-          <div class="btn-box">
-            <a href="" class="btn-1">
-              <i class="fa fa-share-alt" aria-hidden="true"></i>
-            </a>
-          </div>
+    <div class="portfolio_new grid">
+      {% for photo in site.photos %}
+      <div class="grid-item">
+        <img src="{{ site.baseurl }}{{ photo.img }}" alt="{{ photo.alt }}" />
+        <div class="btn-box">
+          <a href="" class="btn-1">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <div class="box-2">
-        <div class="box-2-top">
-          <div class="img-box b-3">
-            <img src="{{ site.baseurl }}/assets/images/p3.jpg" alt="">
-            <div class="btn-box">
-              <a href="" class="btn-1">
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box-3">
-        <div class="img-box b-1">
-          <img src="{{ site.baseurl }}/assets/images/p4.jpg" alt="">
-          <div class="btn-box">
-            <a href="" class="btn-1">
-              <i class="fa fa-share-alt" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="img-box b-2">
-          <img src="{{ site.baseurl }}/assets/images/p5.jpg" alt="">
-          <div class="btn-box">
-            <a href="" class="btn-1">
-              <i class="fa fa-share-alt" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     <div>
       <a href="" class="read_btn">

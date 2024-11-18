@@ -19,7 +19,12 @@ function displayYear() {
 }
 displayYear();
 
-
+//masonry
+$(".grid").masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 360,
+    gutter: 20
+});
 
 //client section owl carousel
 $(".owl-carousel").owlCarousel({
