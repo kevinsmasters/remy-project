@@ -5,7 +5,13 @@
         Portfolio
       </h2>
     </div>
-    
+    <div class="portfolio_new grid">
+      {% for photo in site.photos %}
+      <div class="grid-item">
+        <img src="{{ site.baseurl }}{{ photo.img }}" alt="{{ photo.alt }}" />
+      </div>
+      {% endfor %}
+    </div>
     <div class="portfolio_container ">
       <div class="box-1">
         <div class="img-box b-1">
