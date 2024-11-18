@@ -5,6 +5,11 @@
         Portfolio
       </h2>
     </div>
+    <div class="portfolio_new">
+      {% for photo in site.photos %}
+        <img src="{{ site.baseurl }}{{ photo.img }}" />
+      {% endfor %}
+    </div>
     <div class="portfolio_container ">
       <div class="box-1">
         <div class="img-box b-1">
