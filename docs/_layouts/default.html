@@ -20,7 +20,7 @@
     <link href="{{ site.baseurl }}/assets/css/responsive.css" rel="stylesheet" />
 
   </head>
-  <body>
+  <body class="{{ page.body_class }}">
     {{ content }}
     <script src="{{ site.baseurl }}/assets/js/jquery-3.4.1.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/bootstrap.js"></script>
@@ -28,7 +28,5 @@
     </script>
     <script src="{{ site.baseurl }}/assets/js/masonry.pkgd.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
-
-    <!-- End Google Map -->
   </body>
 </html>
