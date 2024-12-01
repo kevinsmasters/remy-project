@@ -17,35 +17,35 @@
           </button>
         </div>
         {% if page.body_class == 'sub_page' %}
-        <div class="overlay-content">
-          <a href="{{ site.baseurl }}" onclick="closeNav()">
-            Home
-          </a>
-          <a class="" href="{{ site.baseurl }}/about.html" onclick="closeNav()">
-            About
-          </a>
-          <a class="" href="{{ site.baseurl }}/portfolio.html" onclick="closeNav()">
-            Portfolio
-          </a>
-          <a class="" href="{{ site.baseurl }}/team.html" onclick="closeNav()">
-            Team
-          </a>
-        </div>
+          <div class="overlay-content">
+            <a href="{{ site.baseurl }}" onclick="closeNav()">
+              Home
+            </a>
+            <a class="" href="{{ site.baseurl }}/about.html" onclick="closeNav()">
+              About
+            </a>
+            <a class="" href="{{ site.baseurl }}/portfolio.html" onclick="closeNav()">
+              Portfolio
+            </a>
+            <a class="" href="{{ site.baseurl }}/team.html" onclick="closeNav()">
+              Team
+            </a>
+          </div>
         {% else %}
-        <div class="overlay-content">
-          <a class="active" href="#top" onclick="closeNav()">
-            Home
-          </a>
-          <a class="" href="#about" onclick="closeNav()">
-            About
-          </a>
-          <a class="" href="#portfolio" onclick="closeNav()">
-            Portfolio
-          </a>
-          <a class="" href="#team" onclick="closeNav()">
-            Team
-          </a>
-        </div>
+          <div class="overlay-content">
+            <a class="active" href="#top" onclick="closeNav()">
+              Home
+            </a>
+            <a class="" href="#about" onclick="closeNav()">
+              About
+            </a>
+            <a class="" href="#portfolio" onclick="closeNav()">
+              Portfolio
+            </a>
+            <a class="" href="#team" onclick="closeNav()">
+              Team
+            </a>
+          </div>
         {% endif %}
       </div>
       <a class="navbar-brand" href="index.html">
