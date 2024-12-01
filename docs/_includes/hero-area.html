@@ -41,5 +41,7 @@
       </a>
     </nav>
   </header>
-  {% include slider-section.html %}
+  {% unless page.body_class %}
+    {% include slider-section.html %}
+  {% endunless %}
 </div>

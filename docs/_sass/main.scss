@@ -716,9 +716,29 @@ a:focus {
       }
     }
   }
+}
 
+#footertron {
+  background-image: url(https://placecats.com/neo/1005/450?fit=cover&position=top);
+  background-color: rgba(255,255,255,0.6);
+  background-blend-mode: lighten;
+  background-size: cover;
+  height: 100%
 }
 
 
-
 // end footer section
+
+// About page section
+.about_section {
+  .jumbotron.about_me {
+    background-image: url(https://placecats.com/2200/350?fit=cover&position=top);
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-size: cover;
+  }
+  .read_btn {
+    @include hero_btn($btnColor, $white, 7px, 30px, 0, false);
+    margin-top: 75px;
+  }
+}
