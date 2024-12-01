@@ -16,6 +16,22 @@
             <span class="s-3"> </span>
           </button>
         </div>
+        {% if page.body_class == 'sub_page' %}
+        <div class="overlay-content">
+          <a href="{{ site.baseurl }}" onclick="closeNav()">
+            Home
+          </a>
+          <a class="" href="{{ site.baseurl }}/about.html" onclick="closeNav()">
+            About
+          </a>
+          <a class="" href="{{ site.baseurl }}/portfolio.html" onclick="closeNav()">
+            Portfolio
+          </a>
+          <a class="" href="{{ site.baseurl }}/team.html" onclick="closeNav()">
+            Team
+          </a>
+        </div>
+        {% else %}
         <div class="overlay-content">
           <a class="active" href="#top" onclick="closeNav()">
             Home
@@ -30,6 +46,7 @@
             Team
           </a>
         </div>
+        {% endif %}
       </div>
       <a class="navbar-brand" href="index.html">
         <span>
