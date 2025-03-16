@@ -742,3 +742,12 @@ a:focus {
     margin-top: 75px;
   }
 }
+
+.portfolio_section {
+  .jumbotron.about_me {
+    background-image: url(https://placecats.com/2200/350?fit=cover&position=top);
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-size: cover;
+  }
+}

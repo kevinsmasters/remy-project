@@ -9,9 +9,9 @@ body_class: sub_page
     <div class="container text-center">
       <div class="row">
         <div class="col-8 offset-2">
-          <h1 class="display-3">About my work</h1>
+          <h1 class="display-3">About Remington's work</h1>
           <p class="lead" title="put a summary of your photography services">This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      </div>
+        </div>
       </div>
     </div>
   </div>

@@ -6,7 +6,7 @@
       </h2>
     </div>
     <div class="portfolio_new grid">
-      {% for photo in site.photos %}
+      {% for photo in site.photos limit: 5 %}
         <div class="grid-item">
           <img src="{{ site.baseurl }}{{ photo.img }}" alt="{{ photo.alt }}" />
           <div class="btn-box">
@@ -18,7 +18,7 @@
       {% endfor %}
     </div>
     <div>
-      <a href="" class="read_btn">
+      <a href="{{ site.baseurl }}/portfolio.html" class="read_btn">
         See More
       </a>
     </div>
